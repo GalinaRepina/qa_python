@@ -56,7 +56,7 @@ class TestBooksCollector:
         collector.add_new_book("Книга 1")
         collector.set_book_genre("Книга 1", "Фантастика")
         collector.add_book_in_favorites("Книга 1")
-        collector.add_book_in_favorites("Книга 1")  # Добавляем снова
+        collector.add_book_in_favorites("Книга 1")  # Добавляем опять 
         assert collector.get_list_of_favorites_books().count("Книга 1") == 1  # Должно быть только одно
 
     def test_get_books_genre(self):
